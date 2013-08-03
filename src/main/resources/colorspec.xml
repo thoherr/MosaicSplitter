@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <colorspecs>
     <comment>Farbschema für das Mosaik, reduziert auf die "einfach" verfügbaren Farben</comment>
     <colorspec><color>01_White</color><legoId>1</legoId><label>A</label><name>Weiß</name><r>248</r><g>248</g><b>248</b><pantone>CoolGrey 1 C</pantone></colorspec>

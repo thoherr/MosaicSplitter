@@ -52,7 +52,8 @@ class ColorSpec private (val color : Color, val legoId : Int, val label : String
 
 object ColorSpec {
 
-  private val colorspectable : Map[Color, ColorSpec] = createFromXML(XML.loadFile(Thread.currentThread().getContextClassLoader().getResource("colorspec.xml").getFile))
+  private val colorspecstream = getClass.getResourceAsStream("/colorspec.xml")
+  private val colorspectable : Map[Color, ColorSpec] = createFromXML(XML.load(colorspecstream))
 
   private val undefined = new ColorSpec(Color("00_undefined"), 0, "U", "UNDEFINIERT", 127, 127, 127, "UNDEFINIERT")
 
