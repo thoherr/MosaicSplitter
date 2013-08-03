@@ -19,15 +19,15 @@ object InstructionWriter extends HtmlSnippet {
       <link rel="stylesheet" type="text/css" href="mosaic.css" />
     </head>
 
-  def writeOverviewInstructions(mosaic : Mosaic, name : String) {
-    writeOverviewInstructionsToFile(mosaic, name, overviewTileSize, "Gesamt.html", "Gesamtmosaik")
+  def writeOverviewInstructions(mosaic : Mosaic, mosaicName : String) {
+    writeOverviewInstructionsToFile(mosaic, mosaicName, overviewTileSize, "Gesamt.html", "Gesamtmosaik")
   }
 
-  def writeOverviewInstructionsToFile(mosaic : Mosaic, name : String, tileSize : Int, fileName : String, title : String = "Mosaikteil", cellspacing : Int = 1, cellpadding : Int = 0, border : Int = 0) {
+  def writeOverviewInstructionsToFile(mosaic : Mosaic, mosaicName : String, tileSize : Int, fileName : String, title : String = "Mosaikteil", cellspacing : Int = 1, cellpadding : Int = 0, border : Int = 0) {
     val fileContent = <html>
       {header(title)}
       <body>
-        <h1>{name}</h1>
+        <h1>{mosaicName}</h1>
         <h2>{title}</h2>
         {mosaic.toGraphicsHtmlTable(tileSize, cellspacing, cellpadding, border)}
         <h2>Benötigte Teile</h2>
@@ -37,7 +37,7 @@ object InstructionWriter extends HtmlSnippet {
     XML.save(fileName,fileContent)
   }
 
-  def writeModuleInstructions(parts : Array[Array[Mosaic]], name : String) {
+  def writeModuleInstructions(parts : Array[Array[Mosaic]], mosaicName : String) {
     val rows = parts.length
     val cols = parts(0).length
     for (rowNum <- 0 until rows)
@@ -48,8 +48,8 @@ object InstructionWriter extends HtmlSnippet {
         val moduleX = if ( colNum % 2 == 1 ) "rechts" else "links"
         val moduleNumber = (moduleRow-1) * cols/2 + moduleCol
         val fileName = "M-" + moduleNumber.formatted("%03d") + "_Z-" + moduleRow.formatted("%02d") + "_S-" + moduleCol.formatted("%02d") + "_" + moduleX(0) + moduleY(0) + ".html"
-        val name = "Mosaikteil " + moduleNumber + " (" + moduleX(0) + moduleY(0) + ") - Zeile " + moduleRow + ", Spalte " + moduleCol + ", " + moduleX + " " + moduleY +""
-        InstructionWriter.writeModuleInstructionsToFile(parts(rowNum)(colNum), name, detailTileSize, fileName, name, 0, 1, 1)
+        val title = "Mosaikteil " + moduleNumber + " (" + moduleX(0) + moduleY(0) + ") - Zeile " + moduleRow + ", Spalte " + moduleCol + ", " + moduleX + " " + moduleY +""
+        InstructionWriter.writeModuleInstructionsToFile(parts(rowNum)(colNum), mosaicName, detailTileSize, fileName, title, 0, 1, 1)
       }
   }
 
