@@ -1,0 +1,69 @@
+/* Style sheet for MosaicSplitter */
+
+body {
+	font-family: Verdana, Arial, sansserif;
+}
+
+img {
+	border: none;
+}
+
+a, a:visited {
+	text-decoration: none;
+	font-weight: bold;
+	color: #323f91;
+	}
+
+a:hover {
+	text-decoration: underline;
+}
+
+p,td	{
+	font-size: 12px;
+}
+
+td	{
+	font-weight: bold;
+}
+
+td.titleline {
+}
+
+td.title {
+}
+
+tr.partlist {
+	font-size: 12px;
+}
+
+tr.colorLabel td {
+	font-size: 240px;
+}
+
+td.copyright {
+	font-size: 10px;
+	font-weight: normal;
+}
+
+td.please_return {
+	font-size: 13px;
+	font-weight: bold;
+	color: #EE1111;
+}
+
+h1 {
+	font-size: 24px;
+	font-weight: bold;
+	color: #323f91;
+}
+
+h2 {
+	font-size: 13px;
+	font-weight: bold
+	color: #323f91;
+}
+
+h3,h4 {
+	font-size: 13px;
+	font-weight: bold
+}

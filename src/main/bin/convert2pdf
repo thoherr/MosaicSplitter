@@ -1,0 +1,8 @@
+#!/bin/bash
+
+for filename in $*
+do
+    f=`basename $filename .html`
+    echo Converting $f
+    wkhtmltopdf -q -O Landscape -s A5 -T 5 -B 2 $f.html $f.pdf
+done
