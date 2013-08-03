@@ -41,13 +41,6 @@ class ColorSpec private (val color : Color, val legoId : Int, val label : String
       attribute("width", width) % attribute("height", height) % attribute("bgcolor", toHexString)
   }
 
-  def toHtmlImage(width : Int, height : Int) = {
-      val img = <img/> %
-          attribute("src", fileName) % attribute("alt", name) %
-          attribute("width", width) % attribute("height", height)
-      <td>{img}</td>
-  }
-
  }
 
 object ColorSpec {
