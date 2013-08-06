@@ -10,7 +10,6 @@ class Color private (val name : String) extends Ordered[Color] {
   def label = if (ColorSpec.isDefinedFor(this)) ColorSpec(this).label else name
   override def toString = if (ColorSpec.isDefinedFor(this)) ColorSpec(this).name else name.substring(3)
   def compare(that : Color) = label.compare(that.label)
-  def fileName = name + ".jpg"
 
   // The next two are necessary in order to use Color as Key to Maps etc.
   override def equals(other : Any) = {
@@ -28,7 +27,6 @@ class ColorSpec private (val color : Color, val legoId : Int, val label : String
   override def toString = "[" + color.toString + "," + legoId + "," + name + ",(" + r + "," + g + "," + b + ")," + pantone + "]"
   def toHexString = "#" + (r * 256 * 256 + g * 256 + b).toHexString.formatted("%6s").replace(' ', '0') // TBD: There must be a much better way to do this!
   def textColor = if (r+g+b > 384) "#111111" else "#EEEEEE"
-  def fileName = color.fileName
 
   def toHtmlTextWithBackgroundColor(width : Int, height : Int) = {
     <td align="center" valign="middle">{label}</td> %
