@@ -22,7 +22,7 @@ Convert the XML of the mosaic and create the HTML instruction pages
 
 The default for the module size is 8 * 8.
 
-The resulting HTML files can be converted to PDF with the scripts under toe bin directory, using wkhtmltopdf (https://code.google.com/p/wkhtmltopdf/).
+The resulting HTML files can be converted to PDF with the scripts under the bin directory, using wkhtmltopdf (https://code.google.com/p/wkhtmltopdf/).
 
 Building
 --------
