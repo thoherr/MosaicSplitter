@@ -1,1 +1,1 @@
-wkhtmltopdf -q --page-width 420 --page-height 775 -T 5 -B 2 Gesamt.html Gesamt.pdf
+wkhtmltopdf -q --page-width 420 --page-height 775 Gesamt.html Gesamt.pdf
