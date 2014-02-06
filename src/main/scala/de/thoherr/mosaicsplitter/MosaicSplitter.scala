@@ -13,7 +13,7 @@ object MosaicSplitter {
 
   def main(args : Array[String]) : Unit = {
     if (args.size > 1) {
-      val mosaic = Mosaic.createFromXML(XML.load(args(0)))
+      val mosaic = MosaicReader.createFromXML(XML.load(args(0)))
       val name = args(1)
       val moduleWidth = if (args.size > 2) args(2).toInt else 8
       val moduleHeight = if (args.size > 3) args(3).toInt else moduleWidth

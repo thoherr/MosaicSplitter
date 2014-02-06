@@ -9,7 +9,7 @@ class Color private (val name : String) extends Ordered[Color] {
   override def toString = if (ColorSpec.isDefinedFor(this)) ColorSpec(this).name else name.substring(3)
   def compare(that : Color) = label.compare(that.label)
 
-  // The next two are necessary in order to use Color as Key to Maps etc.
+  // These two methods are necessary in order to use Color as Key to Maps etc.
   override def equals(other : Any) = {
     other != null && other.isInstanceOf[Color] && name.equalsIgnoreCase(other.asInstanceOf[Color].name)
   }

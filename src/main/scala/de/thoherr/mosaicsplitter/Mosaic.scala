@@ -56,11 +56,3 @@ class Mosaic(pictureData: Array[Array[Part]]) extends HtmlSnippet {
     table(pictureData.map(row2html), cellspacing, cellpadding, border)
   }
 }
-
-object Mosaic {
-  def createFromXML(xmlSpec: Elem) = {
-    val getColorText = (unit: Node) => new Part(new Element((unit \\ "element").text.trim), Color((unit \\ "color").text.trim))
-    val getRow = (row: Node) => (row \\ "unit").map(getColorText).toArray
-    new Mosaic((xmlSpec \\ "row").map(getRow).toArray)
-  }
-}
