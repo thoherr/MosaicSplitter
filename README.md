@@ -27,9 +27,9 @@ The resulting HTML files can be converted to PDF with the scripts under the bin 
 Building
 --------
 
-You will need the Scala programming language installed on your system. The software was written in Scala 2.9.0, which was the release available when i started the project, but the build is against the current release 2.10.2.
+You will need the Scala programming language installed on your system. The software was written in Scala 2.9.0, which was the release available when i started the project, but the build is against the current release 2.10.3.
 
-The build is done by gradle (http://www.gradle.org/). I currently use version 1.8.
+The build is done by gradle (http://www.gradle.org/). I currently use version 1.10.
 
 Known bugs and flaws
 ---------------------
