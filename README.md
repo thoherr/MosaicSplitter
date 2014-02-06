@@ -5,9 +5,9 @@ Creating HTML building instructions for LEGO mosaics.
 
 This program splits the XML-output of the awesome PicToBrick program by Tobias Reichling and Adrian Schütz (http://www.pictobrick.de/en/pictobrick.shtml) into a bunch of HTML files, giving building instructions for smaller tiles of the mosaic.
 
-You have to instruct PicToBrick to output 1*1 tiles or 1*1 bricks only, because MosaicSplitter expects a square pixel structure as input.
+You have to instruct PicToBrick to output 1 * 1 tiles or 1 * 1 bricks only, because MosaicSplitter expects a square pixel structure as input.
 
-MosaicSplitter was originally written for the LEGO mosaic of Bricking Bavaria e. V. at Bricking Bavaria 2011 in Munich.
+MosaicSplitter was originally written for the LEGO mosaic of Bricking Bavaria e. V. at Bricking Bavaria 2011 in Munich and reused for the LEGO mosaic at Bricking Bavaria 2013.
 
 Usage
 -----
@@ -29,7 +29,7 @@ Building
 
 You will need the Scala programming language installed on your system. The software was written in Scala 2.9.0, which was the release available when i started the project, but the build is against the current release 2.10.2.
 
-The build is done by gradle (http://www.gradle.org/). I use version 1.6.
+The build is done by gradle (http://www.gradle.org/). I currently use version 1.8.
 
 Known bugs and flaws
 ---------------------
