@@ -7,9 +7,9 @@ object InstructionWriter extends HtmlSnippet {
   val detailTileSize = 40
   val overviewTileSize = 5
 
-  val generator = "MosaicSplitter " + MosaicSplitter.version + " - (c) 2011, 2013 Thomas Herrmann"
+  val generator = "MosaicSplitter " + MosaicSplitter.version + " - (c) 2011, 2013, 2014 Thomas Herrmann"
   val copyright = "(c) 2013 Bricking Bavaria e.V."
-  
+
   def header(title : String) =
     <head>
       <title>{title}</title>

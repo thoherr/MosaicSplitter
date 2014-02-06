@@ -1,7 +1,6 @@
 package de.thoherr.mosaicsplitter
 
 import scala.xml._
-import collection.immutable.{ListMap, TreeMap, SortedMap}
 
 class Mosaic(pictureData: Array[Array[Part]]) extends HtmlSnippet {
 
