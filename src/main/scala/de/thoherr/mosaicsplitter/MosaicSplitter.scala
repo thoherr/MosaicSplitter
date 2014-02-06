@@ -4,7 +4,7 @@ import scala.xml._
 
 object MosaicSplitter {
 
-  val version = "0.4"  // TODO: Unify version info (build.gradle / here / some time a build number) into Version class
+  val version = "0.5"  // TODO: Unify version info (build.gradle / here / some time a build number) into Version class
 
   def usage {
     println("Usage: MosaicSplitter <file> <name> [moduleWidth [moduleHeight]]")
