@@ -25,22 +25,22 @@ Build the jar file with gradle
 
 Convert the XML of the mosaic and create the HTML instruction pages using the jarfile in build/libs.
 
-    scala <path_to_build_libs>/MosaicSplitter-0.5.jar <inputfile> <title> [moduleWidth [moduleHeight]]
+    scala <path_to_build_libs>/MosaicSplitter-0.6.jar <inputfile> <title> [moduleWidth [moduleHeight]]
 
 The default for the module size is 8 * 8 LEGO bricks. Since we use 2 * 2 bricks this creates plates
 with a size of 16 * 16 studs.
 
 The resulting HTML files can be converted to PDF with the scripts in the bin directory,
-using wkhtmltopdf (https://code.google.com/p/wkhtmltopdf/).
+using wkhtmltopdf (https://wkhtmltopdf.org).
 
 Building
 --------
 
 You will need the Scala programming language installed on your system.
 The software was written in Scala 2.9.0, which was the release available when i
-started the project, but the build is against the current release 2.10.3.
+started the project, but the build is against the current release 2.12.3.
 
-The build is done by gradle (http://www.gradle.org/). I currently use version 1.10.
+The build is done by gradle (http://www.gradle.org/). I currently use version 4.1.
 
 Known bugs and flaws
 ---------------------

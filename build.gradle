@@ -8,10 +8,11 @@ repositories {
 }
 
 dependencies {
-    compile 'org.scala-lang:scala-library:2.10.3'
+    compile 'org.scala-lang:scala-library:2.12.3'
+    compile 'org.scala-lang.modules:scala-xml_2.12:1.0.6'
 }
 
-version = '0.5'
+version = '0.6'
 
 jar {
     manifest {
