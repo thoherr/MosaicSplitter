@@ -2,20 +2,20 @@
 <colorspecs>
     <comment>Default-Farbschema von PicToBrick für das Mosaik (nur aktuell gebrauchte Farben)</comment>
     <colorspec><color>01_White</color><legoId>1</legoId><label>A</label><name>Weiß</name><r>255</r><g>255</g><b>255</b><pantone/></colorspec>
-    <colorspec><color>11_Black</color><legoId>26</legoId><label>B</label><name>Schwarz</name><r>0</r><g>0</g><b>0</b><pantone/></colorspec>
-    <colorspec><color>85_Dark_Bluish_Gray</color><legoId>199</legoId><label>C</label><name>Dunkelgrau</name><r>73</r><g>88</g><b>101</b><pantone/></colorspec>
-    <colorspec><color>03_Yellow</color><legoId>24</legoId><label>D</label><name>Gelb</name><r>255</r><g>214</g><b>0</b><pantone/></colorspec>
-    <colorspec><color>69_Dark_Tan</color><legoId>138</legoId><label>E</label><name>Dunkelbeige</name><r>144</r><g>144</g><b>105</b><pantone/></colorspec>
-    <colorspec><color>02_Tan</color><legoId>5</legoId><label>F</label><name>Beige</name><r>214</r><g>191</g><b>145</b><pantone/></colorspec>
-    <colorspec><color>86_Light_Bluish_Gray</color><legoId>194</legoId><label>G</label><name>Hellgrau</name><r>161</r><g>171</g><b>178</b><pantone/></colorspec>
-    <colorspec><color>88_Reddish_Brown</color><legoId>192</legoId><label>H</label><name>Braun</name><r>104</r><g>46</g><b>47</b><pantone/></colorspec>
-    <colorspec><color>04_Orange</color><legoId>191</legoId><label>I</label><name>Orange</name><r>244</r><g>123</g><b>32</b><pantone/></colorspec>
-    <colorspec><color>59_Dark_Red</color><legoId>154</legoId><label>K</label><name>Dunkelrot</name><r>247</r><g>4</g><b>55</b><pantone/></colorspec>
-    <colorspec><color>05_Red</color><legoId>21</legoId><label>L</label><name>Rot</name><r>238</r><g>46</g><b>36</b><pantone/></colorspec>
-    <colorspec><color>63_Dark_Blue</color><legoId>140</legoId><label>M</label><name>Dunkelblau</name><r>0</r><g>54</g><b>96</b><pantone/></colorspec>
-    <colorspec><color>07_Blue</color><legoId>23</legoId><label>N</label><name>Blau</name><r>0</r><g>87</g><b>164</b><pantone/></colorspec>
-    <colorspec><color>42_Medium_Blue</color><legoId>102</legoId><label>O</label><name>Hellblau</name><r>94</r><g>174</g><b>224</b><pantone/></colorspec>
-    <colorspec><color>80_Dark_Green</color><legoId>28</legoId><label>P</label><name>Dunkelgrün</name><r>0</r><g>65</g><b>37</b><pantone/></colorspec>
-    <colorspec><color>06_Green</color><legoId>37</legoId><label>S</label><name>Grün</name><r>0</r><g>148</g><b>74</b><pantone/></colorspec>
-    <colorspec><color>34_Lime</color><legoId>119</legoId><label>T</label><name>Limette</name><r>181</r><g>206</g><b>47</b><pantone/></colorspec>
+    <colorspec><color>26_Black</color><legoId>26</legoId><label>B</label><name>Schwarz</name><r>0</r><g>0</g><b>0</b><pantone/></colorspec>
+    <colorspec><color>199_Dark_Bluish_Gray</color><legoId>199</legoId><label>C</label><name>Dunkelgrau</name><r>73</r><g>88</g><b>101</b><pantone/></colorspec>
+    <colorspec><color>24_Yellow</color><legoId>24</legoId><label>D</label><name>Gelb</name><r>255</r><g>214</g><b>0</b><pantone/></colorspec>
+    <colorspec><color>138_Dark_Tan</color><legoId>138</legoId><label>E</label><name>Dunkelbeige</name><r>144</r><g>144</g><b>105</b><pantone/></colorspec>
+    <colorspec><color>05_Tan</color><legoId>5</legoId><label>F</label><name>Beige</name><r>214</r><g>191</g><b>145</b><pantone/></colorspec>
+    <colorspec><color>194_Light_Bluish_Grey</color><legoId>194</legoId><label>G</label><name>Hellgrau</name><r>161</r><g>171</g><b>178</b><pantone/></colorspec>
+    <colorspec><color>192_Reddish_Brown</color><legoId>192</legoId><label>H</label><name>Braun</name><r>104</r><g>46</g><b>47</b><pantone/></colorspec>
+    <colorspec><color>191_Orange</color><legoId>191</legoId><label>I</label><name>Orange</name><r>244</r><g>123</g><b>32</b><pantone/></colorspec>
+    <colorspec><color>154_Dark_Red</color><legoId>154</legoId><label>K</label><name>Dunkelrot</name><r>247</r><g>4</g><b>55</b><pantone/></colorspec>
+    <colorspec><color>21_Red</color><legoId>21</legoId><label>L</label><name>Rot</name><r>238</r><g>46</g><b>36</b><pantone/></colorspec>
+    <colorspec><color>140_Dark_Blue</color><legoId>140</legoId><label>M</label><name>Dunkelblau</name><r>0</r><g>54</g><b>96</b><pantone/></colorspec>
+    <colorspec><color>23_Blue</color><legoId>23</legoId><label>N</label><name>Blau</name><r>0</r><g>87</g><b>164</b><pantone/></colorspec>
+    <colorspec><color>102_Medium_Blue</color><legoId>102</legoId><label>O</label><name>Hellblau</name><r>94</r><g>174</g><b>224</b><pantone/></colorspec>
+    <colorspec><color>28_Dark_Green</color><legoId>28</legoId><label>P</label><name>Dunkelgrün</name><r>0</r><g>65</g><b>37</b><pantone/></colorspec>
+    <colorspec><color>37_Green</color><legoId>37</legoId><label>S</label><name>Grün</name><r>0</r><g>148</g><b>74</b><pantone/></colorspec>
+    <colorspec><color>119_Lime</color><legoId>119</legoId><label>T</label><name>Limette</name><r>181</r><g>206</g><b>47</b><pantone/></colorspec>
 </colorspecs>
