@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+if [ $# -lt 2 ]
+then
+  echo "Usage: $0 <inputfile> <title> [moduleWidth [moduleHeight]]"
+  exit 255
+fi
+
+myDir="$(pwd)"
+scriptDir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+mkdir -p "$2"
+cd "$2" || exit 255
+
+cp ${scriptDir}/images/logo.jpg .
+cp ${scriptDir}/css/mosaic.css .
+
+scala -J-Xmx1G ${scriptDir}/../libs/MosaicSplitter-0.6.jar ${myDir}/$1 "$2"

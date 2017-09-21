@@ -21,3 +21,25 @@ jar {
         'Main-Class': 'de.thoherr.mosaicsplitter.MosaicSplitter'
     }
 }
+
+task copyScripts() {
+    doLast {
+        copy {
+            from "src/main/bin"
+            into "build/bin"
+        }
+    }
+}
+
+assemble.dependsOn copyScripts
+
+task archive(type: Zip, dependsOn: 'assemble') {
+
+    from ('build/bin') {
+        into 'bin'
+    }
+
+    from (tasks.jar.archivePath) {
+        into 'libs'
+    }
+}

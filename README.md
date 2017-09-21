@@ -33,19 +33,29 @@ with a size of 16 * 16 studs.
 The resulting HTML files can be converted to PDF with the scripts in the bin directory,
 using wkhtmltopdf (https://wkhtmltopdf.org).
 
+The bin directory contains some scripts to invoke the split (including the copy of the needed css and jpg files) and the PDF generation.
+
+Distribution archive
+--------------------
+
+You can create a distribution ZIP file with
+
+    gradle archive
+
+The resulting archive in build/distribution contains everything needed to run the splitter, i. e. the scripts, the jar, logo and css file. All you need is the scala interpreter and runtime.
+
 Building
 --------
 
 You will need the Scala programming language installed on your system.
-The software was written in Scala 2.9.0, which was the release available when i
-started the project, but the build is against the current release 2.12.3.
+The software was originally written in Scala 2.9.0, which was the release available when i started the project.
+The current build is done with Scala release 2.12.3.
 
 The build is done by gradle (http://www.gradle.org/). I currently use version 4.1.
 
 Known bugs and flaws
 ---------------------
 
-- The Resources (Color Jpegs, logo.jpg, mosaic.css) has to be copied to the destination directory manually (should be written by the program)
 - The text in the resulting HTML files is basically hard-coded and in german.
 
 License
