@@ -14,7 +14,7 @@ You have to instruct PicToBrick to output 1 * 1 tiles or 1 * 1 bricks only, beca
 expects a square pixel structure as input.
 
 MosaicSplitter was originally written for the LEGO mosaic of Bricking Bavaria e. V. at
-Bricking Bavaria 2011 in Munich and reused for the LEGO mosaic at Bricking Bavaria 2013.
+Bricking Bavaria 2011 in Munich and reused for several other mosaics at later events.
 
 Usage
 -----
