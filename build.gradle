@@ -42,4 +42,8 @@ task archive(type: Zip, dependsOn: 'assemble') {
     from (tasks.jar.archivePath) {
         into 'libs'
     }
+
+    from (configurations.runtime) {
+        into 'libs'
+    }
 }
