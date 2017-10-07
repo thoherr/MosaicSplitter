@@ -8,6 +8,7 @@ fi
 
 myDir="$(pwd)"
 scriptDir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+libDir="${scriptDir}/../libs"
 
 mkdir -p "$2"
 cd "$2" || exit 255
@@ -15,4 +16,11 @@ cd "$2" || exit 255
 cp ${scriptDir}/images/logo.jpg .
 cp ${scriptDir}/css/mosaic.css .
 
-scala -J-Xmx1G ${scriptDir}/../libs/MosaicSplitter-0.6.jar ${myDir}/$1 "$2"
+# If you have an installed scala environment, you could use
+#
+# scala -J-Xmx1G ${libDir}/MosaicSplitter-0.6.jar ${myDir}/$1 "$2"
+#
+
+# Everyone should have Java installed
+# Ths assumes that the MosaicSplitter jar included the scala runtime
+java -Xmx1G -jar ${libDir}/MosaicSplitter-0.6.jar ${myDir}/$1 "$2"

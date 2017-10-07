@@ -15,6 +15,11 @@ dependencies {
 version = '0.6'
 
 jar {
+    from {
+        configurations.runtime.collect {
+            it.isDirectory() ? it : zipTree(it)
+        }
+    }
     manifest {
         attributes 'Implementation-Title': name,
         'Implementation-Version': version,
@@ -34,16 +39,10 @@ task copyScripts() {
 assemble.dependsOn copyScripts
 
 task archive(type: Zip, dependsOn: 'assemble') {
-
     from ('build/bin') {
         into 'bin'
     }
-
     from (tasks.jar.archivePath) {
-        into 'libs'
-    }
-
-    from (configurations.runtime) {
         into 'libs'
     }
 }
