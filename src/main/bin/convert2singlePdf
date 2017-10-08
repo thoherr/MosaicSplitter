@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# beware that wkhtmltopdf apparently has a limit of 245 input files, so this only works for small mosaics
+wkhtmltopdf -q --dpi 400 -O Landscape -s A5 M-*.html Anleitungen.pdf
