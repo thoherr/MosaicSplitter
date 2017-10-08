@@ -33,7 +33,10 @@ with a size of 16 * 16 studs.
 The resulting HTML files can be converted to PDF with the scripts in the bin directory,
 using wkhtmltopdf (https://wkhtmltopdf.org).
 
-The bin directory contains some scripts to invoke the split (including the copy of the needed css and jpg files) and the PDF generation.
+The bin directory also contains some scripts to invoke the split (including the copy of the needed css and jpg files) and the PDF generation).
+
+On Mac OS X you can combine the resulting PDF files into one file for easier printing using the script
+"/System/Library/Automator/Combine\ PDF\ Pages.action/Contents/Resources/join.py".
 
 Distribution archive
 --------------------
